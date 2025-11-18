@@ -8,7 +8,7 @@ public class MP20 {
         String str1 = "Привет";
         String str2 = "Пока";
         int[] intArray = {5, 7, 3, 4, 4};
-        String[] strArray = {"Максим", "Геннадий", "Алексей"};
+        String[] strArray = {"Максим", "Игнат", "Алексей"};
 
         System.out.println("int(3) + byte(2) = " + (i + b));
         System.out.println("int(3) / byte(2) = " + (i / b));
