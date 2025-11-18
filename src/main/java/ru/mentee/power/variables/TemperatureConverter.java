@@ -2,28 +2,28 @@ package ru.mentee.power.variables;
 
 public class TemperatureConverter {
     public static void main(String[] args) {
-        // TODO: ŒÔÂ‰ÂÎËÚÂ ÍÓÌÒÚ‡ÌÚ˚ ‰Îˇ ÍÎ˛˜Â‚˚ı ÁÌ‡˜ÂÌËÈ (Ì‡ÔËÏÂ, ‡·ÒÓÎ˛ÚÌ˚È ÌÓÎ¸ ‚  ÂÎ¸‚ËÌ‡ı
-        final double zeroCelsium = 0; // «‡ ÓÒÌÓ‚Û ·ÂÛ ˆÂÎ¸ÒËÈ
-        final double zeroKelvin = -273.15; // ÂÒÎË ·‡Ú¸ ÔÓ ˆÂÎ¸ÒË˛
-        final double zeroFahrenheit = 32; // ÂÒÎË ·‡Ú¸ ÔÓ ˆÂÎ¸ÒË˛
-        // TODO: —ÓÁ‰‡ÈÚÂ ÔÂÂÏÂÌÌ˚Â Ò ÚÂÏÔÂ‡ÚÛ‡ÏË ‚ ‡ÁÌ˚ı ¯Í‡Î‡ı
+        // TODO: –û–ø—Ä–µ–¥–µ–ª–∏—Ç–µ –∫–æ–Ω—Å—Ç–∞–Ω—Ç—ã –¥–ª—è –∫–ª—é—á–µ–≤—ã—Ö –∑–Ω–∞—á–µ–Ω–∏–π (–Ω–∞–ø—Ä–∏–º–µ—Ä, –∞–±—Å–æ–ª—é—Ç–Ω—ã–π –Ω–æ–ª—å –≤ –ö–µ–ª—å–≤–∏–Ω–∞—Ö
+        final double zeroCelsium = 0; // –ó–∞ –æ—Å–Ω–æ–≤—É –±–µ—Ä—É —Ü–µ–ª—å—Å–∏–π
+        final double zeroKelvin = -273.15; // –µ—Å–ª–∏ –±—Ä–∞—Ç—å –ø–æ —Ü–µ–ª—å—Å–∏—é
+        final double zeroFahrenheit = 32; // –µ—Å–ª–∏ –±—Ä–∞—Ç—å –ø–æ —Ü–µ–ª—å—Å–∏—é
+        // TODO: –°–æ–∑–¥–∞–π—Ç–µ –ø–µ—Ä–µ–º–µ–Ω–Ω—ã–µ —Å —Ç–µ–º–ø–µ—Ä–∞—Ç—É—Ä–∞–º–∏ –≤ —Ä–∞–∑–Ω—ã—Ö —à–∫–∞–ª–∞—Ö
         double tempCelsium = 54;
         double tempFahrenheit = 20;
         double tempKelvin = 35;
-        // TODO: Õ‡ÔË¯ËÚÂ ÍÓ‰ ‰Îˇ ÍÓÌ‚ÂÚ‡ˆËË ËÁ Ó‰ÌÓÈ ¯Í‡Î˚ ‚ ‰Û„Û˛
+        // TODO: –ù–∞–ø–∏—à–∏—Ç–µ –∫–æ–¥ –¥–ª—è –∫–æ–Ω–≤–µ—Ä—Ç–∞—Ü–∏–∏ –∏–∑ –æ–¥–Ω–æ–π —à–∫–∞–ª—ã –≤ –¥—Ä—É–≥—É—é
         double celsiumFahrenheit = (tempCelsium* (9/5)) + 32;
         double fahrenheitCelsium = (tempFahrenheit - 32) * (5/9);
         double celsiumKelvin = (tempCelsium + 273.15);
         double kelvinCelsium = (tempKelvin - 273.15);
-        // ‘ÓÏÛÎ˚:
-        // ÷ÂÎ¸ÒËÈ ‚ ‘‡ÂÌ„ÂÈÚ: (C ? 9/5) + 32
-        // ‘‡ÂÌ„ÂÈÚ ‚ ÷ÂÎ¸ÒËÈ: (F ? 32) ? 5/9
-        // ÷ÂÎ¸ÒËÈ ‚  ÂÎ¸‚ËÌ: C + 273.15
-        //  ÂÎ¸‚ËÌ ‚ ÷ÂÎ¸ÒËÈ: K ? 273.15
-        System.out.println("÷ÂÎ¸ÒËÈ ‚ ‘‡ÂÌ„ÂÈÚ: 54 ->" + celsiumFahrenheit);
-        System.out.println("‘‡ÂÌ„ÂÈÚ ‚ ÷ÂÎ¸ÒËÈ: 20 -> " + fahrenheitCelsium);
-        System.out.println("÷ÂÎ¸ÒËÈ ‚  ÂÎ¸‚ËÌ: 54 -> " + celsiumKelvin);
-        System.out.println(" ÂÎ¸‚ËÌ ‚ ÷ÂÎ¸ÒËÈ: 35 -> " + kelvinCelsium);
-        // TODO: ¬˚‚Â‰ËÚÂ ÂÁÛÎ¸Ú‡Ú˚ ÍÓÌ‚ÂÚ‡ˆËË
+        // –§–æ—Ä–º—É–ª—ã:
+        // –¶–µ–ª—å—Å–∏–π –≤ –§–∞—Ä–µ–Ω–≥–µ–π—Ç: (C ? 9/5) + 32
+        // –§–∞—Ä–µ–Ω–≥–µ–π—Ç –≤ –¶–µ–ª—å—Å–∏–π: (F ? 32) ? 5/9
+        // –¶–µ–ª—å—Å–∏–π –≤ –ö–µ–ª—å–≤–∏–Ω: C + 273.15
+        // –ö–µ–ª—å–≤–∏–Ω –≤ –¶–µ–ª—å—Å–∏–π: K ? 273.15
+        System.out.println("–¶–µ–ª—å—Å–∏–π –≤ –§–∞—Ä–µ–Ω–≥–µ–π—Ç: 54 ->" + celsiumFahrenheit);
+        System.out.println("–§–∞—Ä–µ–Ω–≥–µ–π—Ç –≤ –¶–µ–ª—å—Å–∏–π: 20 -> " + fahrenheitCelsium);
+        System.out.println("–¶–µ–ª—å—Å–∏–π –≤ –ö–µ–ª—å–≤–∏–Ω: 54 -> " + celsiumKelvin);
+        System.out.println("–ö–µ–ª—å–≤–∏–Ω –≤ –¶–µ–ª—å—Å–∏–π: 35 -> " + kelvinCelsium);
+        // TODO: –í—ã–≤–µ–¥–∏—Ç–µ —Ä–µ–∑—É–ª—å—Ç–∞—Ç—ã –∫–æ–Ω–≤–µ—Ä—Ç–∞—Ü–∏–∏
     }
 }

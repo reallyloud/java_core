@@ -2,28 +2,28 @@ package ru.mentee.power.variables;
 
 public class StringOperations {
     public static void main(String[] args) {
-        // TODO: Ñîçäàéòå íåñêîëüêî ñòğîêîâûõ ïåğåìåííûõ è ñèìâîëüíûõ ïåğåìåííûõ
-        String str1 = "Àá";
-        String str2 = "Áà";
-        String str3 = "ÂÃ";
-        char ch1 = 'ë';
-        char ch2 = 'î';
-        // TODO: Âûïîëíèòå ğàçëè÷íûå îïåğàöèè:
-        // 1. Êîíêàòåíàöèÿ ñòğîê
+        // TODO: Ğ¡Ğ¾Ğ·Ğ´Ğ°Ğ¹Ñ‚Ğµ Ğ½ĞµÑĞºĞ¾Ğ»ÑŒĞºĞ¾ ÑÑ‚Ñ€Ğ¾ĞºĞ¾Ğ²Ñ‹Ñ… Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ñ‹Ñ… Ğ¸ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»ÑŒĞ½Ñ‹Ñ… Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ñ‹Ñ…
+        String str1 = "ĞĞ±";
+        String str2 = "Ğ‘Ğ°";
+        String str3 = "Ğ’Ğ“";
+        char ch1 = 'Ğ»';
+        char ch2 = 'Ğ¾';
+        // TODO: Ğ’Ñ‹Ğ¿Ğ¾Ğ»Ğ½Ğ¸Ñ‚Ğµ Ñ€Ğ°Ğ·Ğ»Ğ¸Ñ‡Ğ½Ñ‹Ğµ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸:
+        // 1. ĞšĞ¾Ğ½ĞºĞ°Ñ‚ĞµĞ½Ğ°Ñ†Ğ¸Ñ ÑÑ‚Ñ€Ğ¾Ğº
         String concat = str1 + str2;
-        // 2. Ïğåîáğàçîâàíèå ñèìâîëà â ñòğîêó
+        // 2. ĞŸÑ€ĞµĞ¾Ğ±Ñ€Ğ°Ğ·Ğ¾Ğ²Ğ°Ğ½Ğ¸Ğµ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ° Ğ² ÑÑ‚Ñ€Ğ¾ĞºÑƒ
         String character = "" + ch1;
-        // 3. Ïğåîáğàçîâàíèå ÷èñëà â ñòğîêó è îáğàòíî
+        // 3. ĞŸÑ€ĞµĞ¾Ğ±Ñ€Ğ°Ğ·Ğ¾Ğ²Ğ°Ğ½Ğ¸Ğµ Ñ‡Ğ¸ÑĞ»Ğ° Ğ² ÑÑ‚Ñ€Ğ¾ĞºÑƒ Ğ¸ Ğ¾Ğ±Ñ€Ğ°Ñ‚Ğ½Ğ¾
         String intParsing = 34 + "";
         int parsedInt = Integer.parseInt(intParsing);
-        // 4. Èçâëå÷åíèå ñèìâîëà èç ñòğîêè
+        // 4. Ğ˜Ğ·Ğ²Ğ»ĞµÑ‡ĞµĞ½Ğ¸Ğµ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ° Ğ¸Ğ· ÑÑ‚Ñ€Ğ¾ĞºĞ¸
         char[] charArray = str3.toCharArray();
         char parsedChar = charArray[1];
-        // Âûâåäèòå ğåçóëüòàòû âñåõ îïåğàöèé
-        System.out.println("Êîíêàòåíàöèÿ: " + "\"Àá\" + \"Áà\" = " + concat);
-        System.out.println("Ñèìâîë â ñòğîêó: " + "\'ë\' -> " + "\"" + character + "\"");
-        System.out.println("×èñëî â ñòğîêó: " + intParsing + " -> \"" + parsedInt + "\"");
-        System.out.println("Ñòğîêà â ÷èñëî: " + "\"" + parsedInt + "\"" + " -> " + intParsing);
-        System.out.println("Ñèìâîë èç ñòğîêè \"ÂÃ\": èíäåêñ 1 -> " + parsedChar );
+        // Ğ’Ñ‹Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ñ‹ Ğ²ÑĞµÑ… Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹
+        System.out.println("ĞšĞ¾Ğ½ĞºĞ°Ñ‚ĞµĞ½Ğ°Ñ†Ğ¸Ñ: " + "\"ĞĞ±\" + \"Ğ‘Ğ°\" = " + concat);
+        System.out.println("Ğ¡Ğ¸Ğ¼Ğ²Ğ¾Ğ» Ğ² ÑÑ‚Ñ€Ğ¾ĞºÑƒ: " + "\'Ğ»\' -> " + "\"" + character + "\"");
+        System.out.println("Ğ§Ğ¸ÑĞ»Ğ¾ Ğ² ÑÑ‚Ñ€Ğ¾ĞºÑƒ: " + intParsing + " -> \"" + parsedInt + "\"");
+        System.out.println("Ğ¡Ñ‚Ñ€Ğ¾ĞºĞ° Ğ² Ñ‡Ğ¸ÑĞ»Ğ¾: " + "\"" + parsedInt + "\"" + " -> " + intParsing);
+        System.out.println("Ğ¡Ğ¸Ğ¼Ğ²Ğ¾Ğ» Ğ¸Ğ· ÑÑ‚Ñ€Ğ¾ĞºĞ¸ \"Ğ’Ğ“\": Ğ¸Ğ½Ğ´ĞµĞºÑ 1 -> " + parsedChar );
     }
 }
