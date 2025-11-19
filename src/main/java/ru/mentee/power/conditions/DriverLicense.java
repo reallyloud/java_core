@@ -15,5 +15,7 @@ public class DriverLicense {
         } else {
             System.out.println("Вы не можете водить.");
         }
+    sc.close();
     }
+
 }
