@@ -1,5 +1,4 @@
 package ru.mentee.power.conditions;
-
 import net.bytebuddy.jar.asm.commons.SimpleRemapper;
 
 import java.util.HashMap;
@@ -12,14 +11,14 @@ public class LogicalTrainer {
         if (likeMath) likes++;
         if (likeProgramming) likes++;
         if (likeReading) likes++;
-        logicValues.put(0,likeMath&&likeProgramming); //Любит программирование и математику;
-        logicValues.put(1,likeMath&&likeReading); //Любит математику и читать;
-        logicValues.put(2,!likeMath&& likeProgramming); //Любит программирование, но не любит математику;
-        logicValues.put(3,!likeReading&&likeProgramming); //Любит программирование, но не любит читать;
-        logicValues.put(4,likeMath&&likeProgramming&&likeReading); //Любит всё вместе;
-        logicValues.put(5,!likeMath&&!likeProgramming&&!likeReading); //Не любит ничего;
-        logicValues.put(6,likes == 1); //Любит что-то одно;
-        logicValues.put(7,likeMath || likeProgramming || likeReading); //Любит хоть что-то;
+        logicValues.put(0,likeMath&&likeProgramming);
+        logicValues.put(1,likeMath&&likeReading);
+        logicValues.put(2,!likeMath&& likeProgramming);
+        logicValues.put(3,!likeReading&&likeProgramming);
+        logicValues.put(4,likeMath&&likeProgramming&&likeReading);
+        logicValues.put(5,!likeMath&&!likeProgramming&&!likeReading);
+        logicValues.put(6,likes == 1);
+        logicValues.put(7,likeMath || likeProgramming || likeReading);
         return logicValues;
     }
 }
