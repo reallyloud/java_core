@@ -38,10 +38,10 @@ public class CarEcoRating {
     public int calculateEcoRating(String fuelType, double engineVolume,
                                   double fuelConsumption, int yearOfManufacture,
                                   boolean isEuroCompliant) {
-        if (!validateInput(fuelType,engineVolume,fuelConsumption,yearOfManufacture))
+        if (!validateInput(fuelType, engineVolume, fuelConsumption, yearOfManufacture))
             return ERROR_CODE;
         int rating = getBaseFuelTypeRating(fuelType);
-        rating = applyRatingModifiers(rating,fuelType,engineVolume,fuelConsumption,yearOfManufacture,isEuroCompliant);
+        rating = applyRatingModifiers(rating, fuelType, engineVolume, fuelConsumption, yearOfManufacture, isEuroCompliant);
         rating = clampRating(rating);
         // TODO: Реализуйте метод согласно требованиям
         // 1. Проверьте корректность входных данных через validateInput
