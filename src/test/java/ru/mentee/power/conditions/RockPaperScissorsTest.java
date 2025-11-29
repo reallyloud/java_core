@@ -37,7 +37,7 @@ class RockPaperScissorsTest {
         String result = game.determineWinner(playerChoice, computerChoice);
 
         // Assert
-        // TODO: Исправьте ошибку в ожидаемом результате!
+
         // Камень бьет ножницы, поэтому игрок должен победить
         assertThat(result).isEqualTo(PLAYER_WINS); // В этой строке ошибка!
     }
@@ -60,7 +60,6 @@ class RockPaperScissorsTest {
     @DisplayName("Бумага побеждает камень")
     void paperBeatsRock() {
         // Arrange
-        // TODO: Исправьте ошибку в выборе компьютера!
         // Для проверки того, что бумага побеждает камень, компьютер должен выбрать камень
         String playerChoice = PAPER;
         String computerChoice = ROCK; // В этой строке ошибка!
@@ -83,7 +82,6 @@ class RockPaperScissorsTest {
         String result = game.determineWinner(playerChoice, computerChoice);
 
         // Assert
-        // TODO: Исправьте ошибку в ожидаемом результате!
         // При одинаковом выборе должна быть ничья
         assertThat(result).isEqualTo(DRAW); // В этой строке ошибка!
     }
@@ -127,7 +125,6 @@ class RockPaperScissorsTest {
         String result = game.determineWinner(playerChoice, computerChoice);
 
         // Assert
-        // TODO: Исправьте ошибку в ожидаемом результате!
         // При некорректном выборе должна возвращаться ошибка
         assertThat(result).isEqualTo(ERROR); // В этой строке ошибка!
     }
@@ -143,7 +140,6 @@ class RockPaperScissorsTest {
         String result = game.determineWinner(playerChoice, computerChoice);
 
         // Assert
-        // TODO: Исправьте ошибку в ожидаемом результате!
         // При некорректном выборе должна возвращаться ошибка
         assertThat(result).isEqualTo(ERROR); // В этой строке ошибка!
     }
@@ -169,7 +165,6 @@ class RockPaperScissorsTest {
         String choice = game.generateComputerMove();
 
         // Assert
-        // TODO: Исправьте ошибку в проверке допустимых вариантов!
         // Метод должен возвращать один из допустимых вариантов: Камень, Ножницы или Бумага
         assertThat(choice).isIn(ROCK, SCISSORS, PAPER); // В этой строке ошибка!
     }
@@ -180,7 +175,6 @@ class RockPaperScissorsTest {
             "Ножницы, Камень, Победа компьютера",
             "Бумага, Бумага, Ничья",
             "Ножницы, Бумага, Победа игрока",
-            // TODO: Исправьте ошибки в ожидаемых результатах!
             "Камень, Бумага, Победа компьютера",  // В этой строке ошибка! Бумага бьет камень → Победа компьютера
             "Бумага, Ножницы, Победа компьютера"   // В этой строке ошибка! Ножницы бьют бумагу → Победа компьютера
     })
@@ -200,7 +194,6 @@ class RockPaperScissorsTest {
         String result = game.playOneGame(playerChoice);
 
         // Assert
-        // TODO: Исправьте ошибку в проверке результата!
         // Результат должен содержать информацию о выборе компьютера
         assertThat(result).contains("Компьютер ");  // В этой строке ошибка!
         assertThat(result).containsAnyOf(PLAYER_WINS, COMPUTER_WINS, DRAW);
@@ -221,33 +214,7 @@ class RockPaperScissorsTest {
         String result = game.playOneGame(playerChoice);
 
         // Assert
-        // TODO: Исправьте ошибку в ожидаемом сообщении!
         // При некорректном выборе игрока должно выводиться сообщение об ошибке
         assertThat(result).isEqualTo(ERROR); // В этой строке ошибка!
     }
-
-    // Бонус: Используйте моки для подмены generateComputerChoice
-    // Для этого нужно добавить зависимость Mockito в build.gradle:
-    // testImplementation 'org.mockito:mockito-core:5.+'
-    // testImplementation 'org.mockito:mockito-junit-jupiter:5.+'
-    // И использовать @ExtendWith(MockitoExtension.class) над классом теста
-    /*
-    @Test
-    @DisplayName("Тестирование метода playGame с моком для generateComputerChoice")
-    void testPlayGame_WithMock() {
-        // Arrange
-        RockPaperScissors mockedGame = Mockito.spy(new RockPaperScissors()); // Создаем spy
-        String playerChoice = ROCK;
-        String forcedComputerChoice = PAPER; // Заставим компьютер выбрать Бумагу
-        Mockito.doReturn(forcedComputerChoice).when(mockedGame).generateComputerMove();
-
-        // Act
-        String result = mockedGame.playOneGame();
-
-        // Assert
-        assertThat(result).isEqualTo(String.format("Компьютер выбрал: %s. Результат: %s",
-                                     forcedComputerChoice, COMPUTER_WINS));
-        Mockito.verify(mockedGame, Mockito.times(1)).generateComputerMove(); // Убедимся, что метод был вызван
-    }
-    */
 }
